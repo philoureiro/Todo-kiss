@@ -14,7 +14,7 @@ Ter a biblioteca do MysqlConnector/J disponível no eclipse; <br/>
 Ter o java sdk instalado na máquina; <br/>
 Ter adicionado ao projeto, as bibliotecas do javafx e do mysql connector;
 Ter instânciado um banco de dados mysql, conforme o arquivo db.properties; <br/>
-Ter executado os 2 scripts disponíveis para a configuração do banco de dados: CREATE / POPULATE nessa ordem; <br/>
+Ter executado os 2 scripts SQL disponíveis para a configuração do banco de dados: CREATE.sql e POPULATE.sql nessa ordem; <br/>
 
 
 <br/>
