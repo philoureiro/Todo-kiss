@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="1113.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
+   <content>
+      <VBox prefHeight="383.0" prefWidth="599.0">
+         <children>
+            <HBox prefHeight="28.0" prefWidth="599.0">
+               <children>
+                  <MenuBar fx:id="menuBar" prefHeight="25.0">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="Tasks">
+                        <items>
+                          <MenuItem fx:id="tasksButton" mnemonicParsing="false" onAction="#onTasksButtonClicked" text="Tasks" />
+                              <MenuItem fx:id="addNewTaskButton" mnemonicParsing="false" onAction="#onAddNewTaskButtonClicked" text="Adicionar task" />
+                        </items>
+                      </Menu>
+                        <Menu mnemonicParsing="false" text="Categorias">
+                           <items>
+                              <MenuItem fx:id="addNewCategoryButton" mnemonicParsing="false" onAction="#onAddNewCategoryButtonClicked" text="Adicionar categoria" />
+                              <MenuItem fx:id="deleteCategoryButton" mnemonicParsing="false" onAction="#onDeleteCategoryButtonClicked" text="Excluir categoria" />
+                           </items>
+                        </Menu>
+                    </menus>
+                  </MenuBar>
+               </children>
+            </HBox>
+            <TableView fx:id="tasksTableView" minHeight="-Infinity" minWidth="-Infinity" prefHeight="199.0" prefWidth="599.0" />
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>
